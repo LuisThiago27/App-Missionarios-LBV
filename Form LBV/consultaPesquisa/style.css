@@ -1,0 +1,107 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    font-family: sans-serif;
+    color: #295073;
+    font-weight: 500;
+}
+
+.center {
+    max-width: 500px;
+    width: 100%;
+    height: 650px;
+    background-color: #E7EBF4;
+    overflow: auto;
+}
+
+.header {
+    height: 220px;
+    background-color: #295073;
+}
+
+.navbar {
+   border-bottom: 2px solid #F2F2F2;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+}
+
+.navbar img {
+    width: 40px;
+}
+
+.nav-right span {
+    font-size: 16px;
+}
+
+.text-saudacao {
+    padding: 40px 30px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .card {
+    position: relative;
+    top: -60px;
+    margin-top: 2%;
+    box-shadow: 0 5px 3px #ccc;
+
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.container-btn {
+    text-align: center;
+}
+
+.container-btn .btn {
+    padding: 10px 20px;
+    background-color: #295073;
+    color: #fff;
+}
+
+.center::-webkit-scrollbar {
+    width: 10px;
+}
+
+.center::-webkit-scrollbar-thumb {
+    background-color: #56708D;
+    border-radius: 5px;
+}
+
+.modal-content {
+    width: 400px;
+    height: 500px;
+}
+
+.totalAtividades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalAtividades label {
+    color: #000000ee;
+}
+
+.resultadoAtividades {
+    padding: 10px 30px;
+    margin-left: 2%;
+}
