@@ -95,14 +95,14 @@ $(document).ready(function() {
                 itens = $.map(data.result,function(obj){
                             return {
                                 id: obj["ID"], 
-                                text:obj["NAME"] + obj["LAST_NAME"]
+                                text:obj["NAME"] + " " + obj["LAST_NAME"]
                             }
                         }); 
                         return{
                     results: itens
                 }
             }
-        }                
+        }                             
     });
 
     $('#pregador_responsavel').select2({
@@ -150,15 +150,14 @@ $(document).ready(function() {
                 itens = $.map(data.result,function(obj){
                             return {
                                 id: obj["ID"], 
-                                text:obj["NAME"],
-                                last_name: obj["LAST_NAME"]
+                                text:obj["NAME"] + " " + obj["LAST_NAME"]
                             }
                         }); 
                         return{
                     results: itens
                 }
             }
-        }                
+        }               
     });
 
     $('#participantes').select2({
@@ -177,14 +176,13 @@ $(document).ready(function() {
                 itens = $.map(data.result,function(obj){
                             return {
                                 id: obj["ID"], 
-                                text:obj["NAME"],
-                                last_name: obj["LAST_NAME"]
+                                text:obj["NAME"] + " " + obj["LAST_NAME"]
                             }
                         }); 
                         return{
                     results: itens
                 }
             }
-        }                
+        }                 
     })
 });
