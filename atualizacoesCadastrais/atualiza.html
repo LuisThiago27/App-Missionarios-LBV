@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--bootstrap-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--font-awesome-->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--Jquery-->
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!--select2-->
+
+    <link rel="stylesheet" href="/assets/css/atualiza.css">
+    <title>Atualizações Cadastrais</title>
+
+</head>
+
+<body>
+    <div class="center">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #295073 !important">
+                <div class="nav-right">
+                    <a class="navbar-brand" href="#"> <img
+                            src="https://cdn.bitrix24.com/b10595917/bitrix24/48a/48aab440c0226b90128ffe6f73ec38a9/logo_ypntoiez.png"
+                            alt=""> </a>
+                    <span class="navbar-brand mb-0 h1">Religião de Deus</span>
+                </div>
+                <div class="nav-left">
+                    <button class="navbar-toggler" type="button" style="display: block !important;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!--Modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item ">An active item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-saudacao">
+                <h4 class="text-center">Atualizações Cadastrais</h4>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" style="width: 28rem;">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label class="form-label">Unidade</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Não selecionada</option>
+                                    <option value="">Anápolis/GO</option>
+                                    <option value="">Arapongas/PR</option>
+                                    <option value="">Belém/PA</option>
+                                    <option value="">Cabo Frio/RJ</option>
+                                    <option value="">Cuiába/MT</option>
+                                    <option value="">Goiânia/GO</option>
+                                    <option value="">João Pessoa/PB</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label class="form-label">Nome do pregador responsável ou coordenador</label>
+                                <select class="form-select" id="pregador_responsavel" style="width: 100%;" aria-label="Default select example"></select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label class="form-label">Contato para atualização</label>
+                                <select class="form-select" id="contato" style="width: 100%;" aria-label="Default select example"></select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label class="form-label">Dados para atualizar</label>
+                                <textarea class="form-control" placeholder="Digite o que deseja atualizar" style="height: 200px"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="container-btn">
+                            <button type="button" class="btn"><a href="/App-Missionarios-LBV/Form%20LBV/menu/menu.html" style="text-decoration: none; color: white;">Enviar</a></button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/assets/js/select2.js"></script>
+</body>
+</html>
